@@ -1,0 +1,10 @@
+安装完按照网站后台提示  基本的安全设置一下
+
+
+1  install  member  special   用不到的请删除一下
+2  include  plus  禁止写入
+3  data/common.inc.php   数据库连接文件  禁止写入与执行   只读模板
+4  后台登陆路径dede  修改下名字  英文或者数字都可以 如codesdq
+默认登陆路径为  域名/dede    修改后登陆路径 域名/codesdq(修改后的名称）
+
+安装过程中遇到问题可以联系QQ：121673232

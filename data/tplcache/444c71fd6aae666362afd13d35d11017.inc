@@ -1,0 +1,1 @@
+<p class="text-center"><a href="[field:typelink /]" class="btn btn-success" target="_blank" title="查看更多新闻">查看更多 MORE→</a></p>

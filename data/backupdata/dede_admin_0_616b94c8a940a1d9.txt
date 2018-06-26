@@ -1,0 +1,1 @@
+INSERT INTO `dede_admin` VALUES('1','10','admin','42cec03184732afaaa9f','织梦模板大全','dedecms.codesdq.com','织梦模板大全','','1494468974','127.0.0.1');

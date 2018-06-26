@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>绿菩提装饰温馨提示 - 您的访问出错了！</title>
+<style type="text/css">
+<!--
+body {line-height: 30px;font-size: 10.5pt;padding:10px 30px 30px 30px }
+-->
+</style>
+</head>
+<body>
+<h1><a href="http://www.lvputi.com/"><img src="http://www.lvputi.com/images/404logo.jpg" alt="广州市绿菩提装饰有限公司"/></a></h1>
+<strong>您的访问出错了！</strong> <a href="http://www.lvputi.com/">返回首页</a> | <span id="BackSecs" style="color: #F00;"></span>秒后自动返回绿菩提装饰首页
+<script>function countDown(Secs) {
+    BackSecs.innerText=Secs;
+    if(Secs>0) {
+        setTimeout("countDown("+Secs+"-1)",1000);
+    }
+    else {
+        window.location="http://www.lvputi.com";
+    }
+}
+countDown(3);
+</script>
+<hr />
+<h3>很抱歉，您要访问的页面不存在。</h3>
+<ol>
+  <li>请检查您输入的网址是否正确。 </li>
+  <li>您访问的链接可能已更改或删除。</li>
+  <li>如果您不能确认您输入的网址，请进入网站搜索主题。</li>
+</ol>
+<p>如还有疑问请致电给我们4000-9000-25 / 020-82580958，我们万分感谢您的支持和信任，非常乐于接受您的意见或建议。</p>
+<hr />
+<p>&copy; 1999-2015 www.lvputi.com</p>
+</body>
+</html>

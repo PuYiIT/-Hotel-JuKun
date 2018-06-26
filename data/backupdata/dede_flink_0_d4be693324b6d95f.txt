@@ -1,0 +1,3 @@
+INSERT INTO `dede_flink` VALUES('2','1','http://www.dededaquan.com/','dedecms模板','','','','1226375403','1','2');
+INSERT INTO `dede_flink` VALUES('9','1','http://bbs.codesdq.com/','源码大全论坛','','','','1227772717','1','2');
+INSERT INTO `dede_flink` VALUES('8','1','http://dedecms.codesdq.com/free/qiye/','织梦模板下载','','','','1227772703','1','2');

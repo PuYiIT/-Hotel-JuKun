@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="/style/css/bootstrap.min.css" rel="stylesheet">
+<link href="/style/css/style.css" rel="stylesheet">
+<link href="/style/css/animate.min.css" rel="stylesheet">
+<link href="/style/css/owl.theme.css" rel="stylesheet">
+<link href="/style/css/lrtk.css" rel="stylesheet">
+</head>
+<body onmouseup="document.selection.empty()">
+<!-- head start --> 
+{dede:include filename="head.htm"/} 
+<!-- head end -->
+<div class="banner_b"><img src="/style/images/banner3.jpg" alt="{dede:field.seotitle/}"></div>
+<div class="banner_s"><img src="/style/images/banner3_1.jpg" alt="{dede:field.seotitle/}"></div>
+<section class="ngt">
+  <div class="container">
+    <div class="row">
+      <div class="nt">
+       {dede:arclist titlelen='65' row='1' typeid='11'}<a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a>{/dede:arclist} 
+      </div>
+      <div class="cl">当前位置：{dede:field name='position'/}</div>
+    </div>
+  </div>
+</section>
+<!--works start-->
+<section class="sx-jianju work_list">
+  <div class="container">
+    <h3 class="h-h3 text-center">体验式酒店设计流程<span>Design Process</span></h3>
+    <div class="row">
+      <div class="pys s1 d_link">
+        <h4>环境分析与市场调查</h4>
+        <p>分析市场，企业定位</p>
+        <p>有目的、有计划地收集、整理和分析有关供求和资源的各种情报，信息和资料。把握供求现状和发展趋势，为营销策略制定和企业决策提供正确依据。</p>
+      </div>
+      <div class="pys s2 d_link">
+        <h4>文化梳理与主题定位</h4>
+        <p>企业认知，目标</p>
+        <p>主题酒店是以文化为主题，以酒店为载体，以客人的体验为本质，构成主题酒店的基本定义，在其各个功能层次上以及所营造的具有个性化的文化氛围，抛弃原有的刻板的模式化服务。</p>
+      </div>
+      <div class="pys s3 d_link">
+        <h4>体验产品设计</h4>
+        <p>定向目标，体验主题</p>
+        <p>彰显文化，让浓厚的文化内涵成为体验的基础和根本，在体验经济时代下，制造一种环境，营造一种氛围，满足客户的情感需求，其产品定位集中体现在其主题上，体验主体化。</p>
+      </div>
+      <div class="pys s4 d_link">
+        <h4>酒店功能体验化设计</h4>
+        <p>遵循体验式，多元化设计</p>
+        <p>主题酒店设计所追求差异，但这并不意味着主题酒店之间只有差异，在本质上主题酒店之间是相通的，那就是给顾客的体验性。智慧化、专业化、规范化的服务带给顾客良好体验是现代酒店的核心。</p>
+      </div>
+      <div class="pys s5 d_link">
+        <h4>纪念品设计</h4>
+        <p>主题文化延伸</p>
+        <p>根据市场客户的情感需求和对个性化的比重增加，设计与主题同等的纪念品。</p>
+      </div>
+      <div class="pys s6">
+        <h4>体验式五维设计</h4>
+        <p>有形体验，互动</p>
+        <p>感官体验，情感体验，思考体验，行动体验，关联体验重新定义设计营销的思考方式，突破传统的理性消费者的假设，是消费者行为与企业品牌经营的关键。 </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="gg">
+  <section class="container gg_1"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_1.jpg" width="100%" alt="快速咨询"></a> </section>
+  <section class="container gg_2"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_2.jpg" width="100%" alt="快速咨询"></a> </section>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>
