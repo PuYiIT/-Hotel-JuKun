@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="/style/css/bootstrap.min.css" rel="stylesheet">
+<link href="/style/css/style.css" rel="stylesheet">
+<link href="/style/css/animate.min.css" rel="stylesheet">
+<link href="/style/css/owl.theme.css" rel="stylesheet">
+<link href="/style/css/lrtk.css" rel="stylesheet">
+</head>
+<body onmouseup="document.selection.empty()">
+{dede:include filename="head.htm"/}
+<div class="banner_b"><img src="/style/images/banner7.jpg" alt="{dede:field.seotitle/}"></div>
+<div class="banner_s"><img src="/style/images/banner7_1.jpg" alt="{dede:field.seotitle/}"></div>
+<section class="ngt">
+  <div class="container">
+    <div class="row">
+      <div class="nt"> {dede:arclist titlelen='65' row='1' typeid='11'}<a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a>{/dede:arclist} </div>
+      <div class="cl">当前位置：{dede:field name='position'/}</div>
+    </div>
+  </div>
+</section>
+<section class="sx-jianju neirong d_link">
+  <div class="container">
+    <h3 class="h-h3 text-center">酒店简介<span>Hotel Introduction</span></h3>
+    {dede:field.content/}
+  </div>
+</section>
+<div class="gg">
+  <section class="container gg_1"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_1.jpg" width="100%" alt="快速咨询"></a> </section>
+  <section class="container gg_2"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_2.jpg" width="100%" alt="快速咨询"></a> </section>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>
