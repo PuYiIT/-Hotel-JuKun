@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="/style/css/bootstrap.min.css" rel="stylesheet">
+<link href="/style/css/style.css" rel="stylesheet">
+<link href="/style/css/animate.min.css" rel="stylesheet">
+<link href="/style/css/owl.theme.css" rel="stylesheet">
+<link href="/style/css/lrtk.css" rel="stylesheet">
+</head>
+<body onmouseup="document.selection.empty()">
+{dede:include filename="head.htm"/}
+<div class="banner_b"><img src="/style/images/banner6.jpg" alt="{dede:field.seotitle/}"></div>
+<div class="banner_s"><img src="/style/images/banner6_1.jpg" alt="{dede:field.seotitle/}"></div>
+<section class="ngt">
+  <div class="container">
+    <div class="row">
+      <div class="nt">
+       {dede:arclist titlelen='65' row='1' typeid='11'}<a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a>{/dede:arclist} 
+      </div>
+      <div class="cl">当前位置：{dede:field name='position'/}</div>
+    </div>
+  </div>
+</section>
+<section class="sx-jianju case d_link">
+  <div class="container">
+    <h3 class="h-h3 text-center">客户案例<span>Our Cases</span></h3>
+    <div class="jdzl">
+      <p><span>分类：</span> {dede:channel type='son'}<a href='[field:typelink/]'>[field:typename/]</a> / {/dede:channel}</p>
+    </div>
+    <div class="clear"></div>
+    <div class="row text-center">
+      {dede:list pagesize='9'} 
+      <figure class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a href="[field:arcurl/]" title="[field:title /]" class="pic-link" target="_blank"> <span class="case-hover"> <span class="hover-link"></span> </span> <img src="[field:litpic/]" alt="[field:title /]" /></a>
+        <h4><a href="[field:arcurl/]">[field:title /]</a><br />
+          <small>关注：[field:click/] / 面积：[field:typename/]</small></h4>
+      </figure>
+      {/dede:list}
+      <div class="clear"></div>
+      <div class="fanye text-center">
+        <ul class="pagination pagination-lg">
+      {dede:pagelist listsize='2' listitem='index pre pageno next end '/}
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="gg">
+  <section class="container gg_1"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_1.jpg" width="100%" alt="快速咨询"></a> </section>
+  <section class="container gg_2"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_2.jpg" width="100%" alt="快速咨询"></a> </section>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>{dede:field name="title"/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="/style/css/bootstrap.min.css" rel="stylesheet">
+<link href="/style/css/style.css" rel="stylesheet">
+<link href="/style/css/animate.min.css" rel="stylesheet">
+<link href="/style/css/owl.theme.css" rel="stylesheet">
+<link href="/style/css/lrtk.css" rel="stylesheet">
+</head>
+<body onmouseup="document.selection.empty()">
+<!-- head start --> 
+{dede:include filename="head.htm"/} 
+<!-- head end -->
+<div class="banner_b"><img src="/style/images/banner8.jpg" alt="{dede:field name="title"/}"></div>
+<div class="banner_s"><img src="/style/images/banner8_1.jpg" alt="{dede:field name="title"/}"></div>
+<section class="ngt">
+  <div class="container">
+    <div class="row">
+      <div class="nt"> {dede:arclist titlelen='65' row='1' typeid='11'}<a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a>{/dede:arclist} </div>
+      <div class="cl">当前位置：{dede:field name='position'/}</div>
+    </div>
+  </div>
+</section>
+<!--works start-->
+<section class="sx-jianju neirong">
+  <article class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+        <article class="ny-shuoming text-center">
+          <h2>{dede:field name="title"/}</h2>
+          <p>日期：{dede:field name='pubdate' function='GetDateMk(@me)'/} / 人气：
+            <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+            / 来源：{dede:field name='source'/} </p>
+        </article>
+        <article class="info">
+          <div id="MyContent">
+            <p> {dede:field name='body'/} </p>
+          </div>
+          <p class="text-right">作者：{dede:field name='writer' /}</p>
+        </article>
+        <hr class="m-sx-40" />
+        <div class="text-center">
+         {dede:prenext get='pre'/}
+         {dede:prenext get='next'/}
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="ny-right">
+          <div class="row bd_from text-center">
+            <h4 class="none ny-h4">我要申请装修报价 <small>在线申请还可获得精美礼品一份</small></h4>
+            <form name="myform" action="/plus/form/form.asp" target="hidform1" method="post" id="gb" onSubmit="return CheckFormdo();">
+              <input type="hidden" value="Save" name="action"/>
+              <input type="hidden" value="2" name="id"/>
+              <input type="hidden" value="1" name="m"/>
+              <input type="hidden" value="3508" name="d"/>
+              <input type="hidden" value="" id="tousername" name="tousername"/>
+              <ul class="list-unstyled">
+                <li>您的称呼
+                  <input name="KS_name" id="c_3" type="text" class="s" />
+                </li>
+                <li>联系电话
+                  <input name="KS_phone" id="c_4" type="text" class="s"/>
+                </li>
+                <li>
+                  <input type="submit" class="quikBtn" value="立即免费申请" />
+                </li>
+              </ul>
+            </form>
+            已有<a> 2039 </a>位业主申请了此服务 </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+              <h4 class="ny-h4">大家都在看 <small>Hot News</small></h4>
+              <ul class="list-unstyled clearfix n_list">
+                {dede:arclist titlelen='45' row='5' typeid='11'}
+                <li>2. <a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a><small class="pull-right">[field:pubdate function="MyDate('m-d',@me)"/]</small></li>
+                {/dede:arclist} 
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h4 class="ny-h4">相关阅读 <small>READING</small></h4>
+              <ul class="list-unstyled clearfix n_list">
+                {dede:likearticle row='10' titlelen='80'}
+                <li>2. <a href="[field:arcurl/]" title="[field:title /]">[field:title /]</a><small class="pull-right">[field:pubdate function="MyDate('m-d',@me)"/]</small></li>
+                {/dede:likearticle}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+<section class="case d_link">
+  <div class="container">
+    <h4 class="ny-h4">最新酒店设计案例 <small>Recent case</small></h4>
+    <div class="row text-center">
+     {dede:arclist titlelen='45' row='4' typeid='2'}
+      <figure class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <a href="[field:arcurl/]" title="[field:title /]" class="pic-link" target="_blank"> <span class="case-hover"> <span class="hover-link"></span> </span> <img src="[field:litpic/]" alt="[field:title /]" title="[field:title /]"/></a>
+        <h4><a href="[field:arcurl/]">[field:title /]</a><br />
+          <small>关注：[field:click/] / [field:typename/]</small></h4>
+      </figure>
+      {/dede:arclist}
+    </div>
+  </div>
+</section>
+</div>
+<div class="gg">
+  <section class="container gg_1"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_1.jpg" width="100%" alt="快速咨询"></a> </section>
+  <section class="container gg_2"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qq/}&amp;site=qq&amp;menu=yes" title="快速咨询"><img src="/style/images/gg_2.jpg" width="100%" alt="快速咨询"></a> </section>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

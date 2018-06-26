@@ -1,12 +1,12 @@
 <?php
 $cfg_basehost = 'http://junkun.py.com';
 $cfg_cmspath = '';
-$cfg_cookie_encode = '7oM38frur9KgYQECRLPDaM4bHo4c';
+$cfg_cookie_encode = '9ry6wlY7Ofwv4RBv1pY2UWaHEQrDmqr2';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
 $cfg_webname = '俊坤大酒店';
-$cfg_adminemail = 'admin@dedecms.com';
+$cfg_adminemail = '123@qq.com';
 $cfg_html_editor = 'ckeditor';
 $cfg_arcdir = '/a';
 $cfg_medias_dir = '/uploads';

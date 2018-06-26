@@ -1,0 +1,23 @@
+<!-- head start -->
+<header data-headroom="" class="navbar navbar-default navbar-fixed-top stickyd" role="navigation">
+  <div class="container"> 
+    <!-- mobile nav start -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <!-- logo start -->
+      <h1 class="logo"><a class="navbar-brand" href="/">{dede:global.cfg_webname/}</a></h1>
+    </div>
+    <!-- mobile nav end --> 
+    <!-- nav start -->
+    <nav class="collapse navbar-right navbar-collapse navbar-example" role="navigation">
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation"><a href="/" data-toggle="tooltip" data-placement="bottom" title="Home">首页</a></li>
+        {dede:channel type='top' row='7'}
+        <li role="presentation"><a href="[field:typelink/]" data-toggle="tooltip" data-placement="bottom" title="[field:siteurl/]">[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </nav>
+    <!-- nav end --> 
+  </div>
+</header>
+<!-- head end --> 
